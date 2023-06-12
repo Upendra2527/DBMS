@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(gb8.webp);
+                background-size:cover;
+            }
+            h1{
+                text-align:center;
+                background-color: black;
+                color:white;
+                border-style:solid;
+                width:30%;
+                border-width:3px;
+                margin-left:395px;
+                border-color:red;
+            }
+            .p{
+                color:white;
+                font-size: 28px;
+                text-align:center;
+                justify-content:center;
+            }
+            .nav-text{
+                background-color: black;
+                color:red;
+                font-size:37px;
+                justify-content: center;
+                text-align:center;
+            }
+            li{
+                color:rgb(6, 142, 247);
+                font-size:24px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>set operators</h1>
+        <div class="p">
+            In relational algebra, set operators are used to combine or manipulate<br>
+            relations (tables) based on set theory concepts. Set operators allow <br>
+            you to perform operations such as union, intersection, and difference <br>
+            on relations. Here are the commonly used set operators in relational algebra:<br>
+        </div><br>
+        <ul>
+        <li><b>union(U)</b>- The union operation combines two tables, returning all distinct rows from both tables.
+Ex- find the names of FNAME whose CID is  1 or 2
+ΠFNAME((σCID=1 CROPS)             FARMERS)   U   ΠFNAME((σCID=2 CROPS)            FARMERS) </li><br>
+<li><b>Intersection(∩)</b>- The intersection operation returns only the rows that are common to both tables.
+    Ex- find the names of FNAME whose age is 1 and 2
+    ΠFNAME((σCID=1 CROPS)             FARMERS)   ∩  ΠFNAME((σCID=2 CROPS)            FARMERS)   
+    
+    </li>  <br>
+<li>
+    <b>set difference</b>(-)
+The difference operation returns the rows from the first table that are not present in the second table.
+Ex-
+Find the FNAME whose FID is 2 and CNAME is not CORN
+ΠFNAME((σFID=2 CROPS)             FARMERS)   -  ΠFID((σCNAME=’WHEAT’ CROPS)) 
+
+</li><br><br><br>
+</ul>
+
+        <div class="nav-text">
+            <b>π(FNAME, CROPS)(FARMER)</b>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(gb5.jpg);
+                background-size:cover;
+            }
+            h1{
+                text-align:center;
+                background-color: black;
+                color:white;
+                border-style:solid;
+                width:30%;
+                border-width:3px;
+                margin-left:395px;
+                border-color:red;
+            }
+        ul li{
+                color:rgb(251, 251, 249);
+                font-size: 28px;
+                /*text-align:center;
+                justify-content:center;*/
+            }
+            .nav-text{
+                background-color:black;
+                color:red;
+                width:28%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Join</h1>
+        <ul>
+            <li><b>Theta Join (⨝):</b> The theta join combines tuples from two relations based<br>
+                on a given join condition that uses comparison operators <br>
+                (e.g., equality, greater than, etc.).<br>
+                <div class="nav-text">Example: R ⨝_{condition} S</div><br>
+                </li><br>
+            <li>
+                <b>Natural Join (⨝):</b> The natural join combines tuples from two relations based on the equality<br>
+                 of attributes with the same name in both relations. It automatically matches attributes with the<br>
+                 same name and eliminates duplicate columns in the result.<br>
+                <div class="nav-text">Example: R ⨝ S</div><br>
+
+            </li><br>
+            <li>
+                <b>Equijoin (⨝):</b> Equijoin is a specific type of theta join where the join condition is based on
+                <br>equality of attributes.<br>
+                <div class="nav-text">Example: R ⨝_{R.attr = S.attr} S</div><br>
+            </li><br>
+            <li>
+                <b>Left Outer Join (⟕):</b> The left outer join returns all tuples from the left relation and the matching<br>
+                 tuples from the right relation. If there is no match in the right relation, NULL values are used for the <br>
+                 right relation's attributes.<br>
+                <div class="nav-text">Example: R ⟕ S</div><br>
+            </li><br>
+            <li>
+                <b>Right Outer Join (⟖):</b> The right outer join returns all tuples from the right relation and the<br> 
+                matching tuples from the left relation. If there is no match in the left relation, NULL values are used<br>
+                for the left relation's attributes.<br>
+                <div class="nav-text">Example: R ⟖ S</div><br>
+            </li><br>
+            <li>
+                <b>Full Outer Join (⟗):</b> The full outer join returns all tuples from both the left and right relations<br>
+                and fills in NULL values for non-matching attributes.<br>
+                <div class="nav-text">Example: R ⟗ S</div><br>
+            </li><br>
+
+        </ul>
+    </body>
+</html>
